@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+body {
+  background: lightcyan;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 1rem auto;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.75rem 3rem;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #4931bb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.btn:hover {
+  background: #150077;
+}
+
+.page-content.blurred {
+  -webkit-filter: blur(0.5rem);
+          filter: blur(0.5rem);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 200vh;
+}
+
+header .header__content {
+  max-width: 640px;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.modal.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content {
+  max-width: 640px;
+  position: relative;
+}
+
+.modal__content .card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 3rem;
+}
+
+.modal__content .card .btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__content .close-icon-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal__content .close-icon-wrapper button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.modal__content .close-icon-wrapper button svg {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.modal__content .close-icon-wrapper button:hover svg {
+  fill: red;
+}
+/*# sourceMappingURL=style.css.map */

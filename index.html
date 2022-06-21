@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal window example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts.js" async></script>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="page-content">
+            <div class="container">
+                <header>
+                    <div class="header__content">
+                        <h1>Modal window example</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga obcaecati iste quia dolore,
+                            officiis ut tenetur. Molestias veniam voluptate saepe magnam inventore ad perferendis dolore
+                            commodi, eligendi quos aut, harum deleniti vero sed earum cum aspernatur modi officia ipsa
+                            reprehenderit.</p>
+                    </div>
+                    <button class="btn open-modal">Open modal</button>
+                </header>
+            </div>
+        </div>
+
+    </main>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="card">
+                <div class="instruction">
+                    <p>You can close that modal:</p>
+                    <ul>
+                        <li>
+                            <p>by clicking the button</p>
+                        </li>
+                        <li>
+                            <p>by clicking the cross icon</p>
+                        </li>
+                        <li>
+                            <p>by clicking outside the modal content</p>
+                        </li>
+                        <li>
+                            <p>by clicking the "Escape" key</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn close-modal">
+                    Close modal
+                </div>
+            </div>
+            <div class="close-icon-wrapper">
+                <button class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" fill="black" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.094l-4.157-4.104 4.1-4.141-1.849-1.849-4.105 4.159-4.156-4.102-1.833 1.834 4.161 4.12-4.104 4.157 1.834 1.832 4.118-4.159 4.143 4.102 1.848-1.849z"/></svg></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+body {
+    background: lightcyan;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 1rem auto;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.75rem 3rem;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #4931bb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: fit-content;
+
+    &:hover {
+        background: #150077;
+    }
+}
+
+// PAGE CONTENT
+.page-content {
+    &.blurred {
+        filter: blur(0.5rem);
+    }
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200vh;
+
+    .header__content {
+        max-width: 640px;
+    }
+}
+
+// MODAL 
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    &.is-open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// MY MODAL CONTENT 
+.modal__content {
+    max-width: 640px;
+    position: relative;
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 3rem;
+        .btn {
+            align-items: center;
+        }
+    }
+    .close-icon-wrapper {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        button {
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            svg {
+                transition: all 0.2s;
+                transform: scale(1.5);
+            }
+            &:hover {
+                svg {
+                    fill: red;
+                }
+            }
+        }
+    }
+}
