@@ -1,1 +1,1 @@
-# modal-window
+Modal window example
